@@ -1,7 +1,182 @@
+/* Colors:
+black: #323232
+teal: #00897f
+orange: #f26522
+light gray: #eeeeee
+*/
+
 body {
-  margin: 0;
+  margin: 10px;
+  margin: 10px;
 }
 
+h1, h2, nav h1, footer h1 {
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: bold;
+}
+
+h3, p, {
+  font-family: 'PT Serif', serif;
+}
+
+/*   Black     */
+h1, h3, p, nav h1, nav ul {
+  color: #323232;
+}
+
+/*   Teal      */
+h2 {
+  color: #00897f;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+/* Background Color - Light Gray */
+#contact, .bio {
+  background-color: #eeeeee;
+}
+
+h1 {
+  /* font-family: 'PT Sans Narrow', sans-serif; */
+  font-size: 1.875em;
+  /* .color: #323232; */
+  /* margin-top: 80px;
+  margin-bottom: 45px; */
+}
+
+h3 {
+  font-size: 1em;
+  line-height: 2em;
+}
+
+p {
+  font-size: .875em;
+  line-height: 1.75em;
+}
+
+nav {
+  height: 80px;
+  vertical-align: center;
+}
+
+nav h1 {
+  font-size: 1.5em;
+  display: inline-block;
+  margin: 25px;
+}
+
+nav ul {
+  display: inline-block;
+  float: right;
+}
+
+nav li {
+  font-family: 'PT Sans', sans-serif;
+  font-size: .9em;
+  display: inline-block;
+  margin: 25px 15px;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+}
+
+#main h1 {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 45px;
+  /* margin- */
+}
+
+#main h3 {
+  width: 45%;
+}
+
+#about {
+  text-align: center;
+  vertical-align: center;
+}
+
+.bio {
+  width: 20%;
+  height: 180px;
+  padding: 30px;
+  background-color: #eeeeee;
+  display: inline-block;
+  margin: 30px;
+}
+
+#cats-in-costume: {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 80px;
+  /* display: block;
+  margin-left: auto;
+  margin-right: auto; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#cats-in-costume img {
+  height: 250px;
+  width: 250px;
+  border-radius: 125px;
+  display: inline-block;
+  margin: 0 27px;
+}
+
+#contact {
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+#contact h1 {
+  padding-bottom: 45px;
+}
+
+#contact h2 {
+  font-weight: bold;
+}
+
+.contact-details {
+  background-color: white;
+  width: 20%;
+  display: inline-block;
+  padding: 30px;
+  margin: 30px;
+}
+
+.contact-line-head {
+  text-transform: uppercase;
+}
+
+.contact-details p {
+  text-align: left;
+  line-height: 2em;
+}
+
+.address {
+  color: #f26522;
+}
+
+footer h1 {
+  font-size: 1.25em;
+  /* text-align: center; */
+  color: white;
+  margin-top: 0;
+}
+
+footer {
+  height: 125px;
+  background-color: #00897f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 /* On devices wider than 660px */
 @media(min-width: 660px) {
