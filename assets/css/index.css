@@ -69,6 +69,7 @@ nav h1 {
 nav ul {
   display: inline-block;
   float: right;
+  margin-right: 25px;
 }
 
 nav li {
@@ -83,6 +84,10 @@ a {
   text-decoration: none;
 }
 
+.splash img {
+  width: 100%;
+}
+
 #main h1 {
   text-align: center;
   margin-top: 80px;
@@ -90,8 +95,9 @@ a {
   /* margin- */
 }
 
-#main h3 {
-  width: 45%;
+#intro h3 {
+  width: 50%;
+  margin: 0 auto;
 }
 
 #about {
@@ -105,24 +111,30 @@ a {
   padding: 30px;
   background-color: #eeeeee;
   display: inline-block;
+  vertical-align: top;
   margin: 30px;
+  /* text-align: left; */
 }
 
-#cats-in-costume: {
+.bio p {
+  text-align: left;
+}
+
+#cats-in-costume {
   text-align: center;
   margin-top: 50px;
   margin-bottom: 80px;
-  /* display: block;
-  margin-left: auto;
-  margin-right: auto; */
-  display: flex;
-  align-items: center;
+  /* display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
+  align-items: center; */
 }
 
 #cats-in-costume img {
   height: 250px;
   width: 250px;
+  /* flex-basis: auto; */
   border-radius: 125px;
   display: inline-block;
   margin: 0 27px;
@@ -161,6 +173,10 @@ a {
 
 .address {
   color: #f26522;
+}
+
+#map {
+  width: 100%;
 }
 
 footer h1 {
