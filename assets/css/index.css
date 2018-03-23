@@ -4,45 +4,56 @@ teal: #00897f
 orange: #f26522
 light gray: #eeeeee
 */
-
-body {
-  margin: 10px;
-  margin: 10px;
+/* Black */
+h1,
+h3,
+p,
+nav h1,
+nav ul {
+  color: #323232;
 }
 
-h1, h2, nav h1, footer h1 {
+/* Teal */
+h2 {
+  color: #00897f;
+}
+
+.address {
+  color: #f26522;
+}
+
+/* Background Color - Light Gray */
+#contact, .bio {
+  background-color: #eee;
+}
+
+/* Fonts */
+h1,
+h2,
+nav h1,
+footer h1 {
   font-family: 'PT Sans Narrow', sans-serif;
   font-weight: bold;
 }
 
-h3, p, {
+h3,
+p {
   font-family: 'PT Serif', serif;
 }
 
-/*   Black     */
-h1, h3, p, nav h1, nav ul {
-  color: #323232;
+nav li {
+  font-family: 'PT Sans', sans-serif;
+  font-size: .9em;
 }
 
-/*   Teal      */
 h2 {
-  color: #00897f;
   font-size: 1.5em;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
 
-/* Background Color - Light Gray */
-#contact, .bio {
-  background-color: #eeeeee;
-}
-
 h1 {
-  /* font-family: 'PT Sans Narrow', sans-serif; */
   font-size: 1.875em;
-  /* .color: #323232; */
-  /* margin-top: 80px;
-  margin-bottom: 45px; */
 }
 
 h3 {
@@ -55,14 +66,20 @@ p {
   line-height: 1.75em;
 }
 
+/* General */
+body {
+  margin: 10px;
+}
+
+/* Navigation */
 nav {
   height: 80px;
-  vertical-align: center;
 }
 
 nav h1 {
   font-size: 1.5em;
   display: inline-block;
+  vertical-align: middle;
   margin: 25px;
 }
 
@@ -73,21 +90,22 @@ nav ul {
 }
 
 nav li {
-  font-family: 'PT Sans', sans-serif;
-  font-size: .9em;
   display: inline-block;
-  margin: 25px 15px;
+  margin: 30px 15px;
   text-transform: uppercase;
+  vertical-align: middle;
 }
 
 a {
   text-decoration: none;
 }
 
+/* Splash Image */
 .splash img {
   width: 100%;
 }
 
+/* Main Content */
 #main h1 {
   text-align: center;
   margin-top: 80px;
@@ -95,11 +113,13 @@ a {
   /* margin- */
 }
 
+/* Intro */
 #intro h3 {
   width: 50%;
-  margin: 0 auto;
+  margin: 0 auto 50px auto;
 }
 
+/* About / Bios */
 #about {
   text-align: center;
   vertical-align: center;
@@ -113,37 +133,31 @@ a {
   display: inline-block;
   vertical-align: top;
   margin: 30px;
-  /* text-align: left; */
 }
 
 .bio p {
   text-align: left;
 }
 
+/* Cats in Costume */
 #cats-in-costume {
   text-align: center;
   margin-top: 50px;
   margin-bottom: 80px;
-  /* display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center; */
 }
 
 #cats-in-costume img {
   height: 250px;
   width: 250px;
-  /* flex-basis: auto; */
   border-radius: 125px;
   display: inline-block;
   margin: 0 27px;
 }
 
+/* Contact Information */
 #contact {
   text-align: center;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding: 80px 0;
 }
 
 #contact h1 {
@@ -171,17 +185,13 @@ a {
   line-height: 2em;
 }
 
-.address {
-  color: #f26522;
-}
-
 #map {
   width: 100%;
 }
 
+/* Footer */
 footer h1 {
   font-size: 1.25em;
-  /* text-align: center; */
   color: white;
   margin-top: 0;
 }
