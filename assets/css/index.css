@@ -4,7 +4,6 @@ teal: #00897f
 orange: #f26522
 light gray: #eeeeee
 */
-/* Black */
 h1,
 h3,
 p,
@@ -13,7 +12,6 @@ nav ul {
   color: #323232;
 }
 
-/* Teal */
 h2 {
   color: #00897f;
 }
@@ -22,7 +20,6 @@ h2 {
   color: #f26522;
 }
 
-/* Background Color - Light Gray */
 #contact, .bio {
   background-color: #eee;
 }
@@ -119,7 +116,7 @@ a {
   margin: 0 auto 50px auto;
 }
 
-/* About / Bios */
+/* About - Bios */
 #about {
   text-align: center;
   vertical-align: center;
@@ -139,7 +136,7 @@ a {
   text-align: left;
 }
 
-/* Cats in Costume */
+/* Cats in Costume Images */
 #cats-in-costume {
   text-align: center;
   margin-top: 50px;
@@ -162,6 +159,7 @@ a {
 
 #contact h1 {
   padding-bottom: 45px;
+  margin: 0;
 }
 
 #contact h2 {
@@ -173,7 +171,8 @@ a {
   width: 20%;
   display: inline-block;
   padding: 30px;
-  margin: 30px;
+  margin: 0 30px;
+  vertical-align: top;
 }
 
 .contact-line-head {
@@ -185,6 +184,12 @@ a {
   line-height: 2em;
 }
 
+.contact-details .address {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Map */
 #map {
   width: 100%;
 }
