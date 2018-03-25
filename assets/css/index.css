@@ -124,9 +124,9 @@ a {
 
 .bio {
   width: 20%;
-  height: 180px;
+  min-height: 180px;
   padding: 30px;
-  background-color: #eeeeee;
+  /* background-color: #eeeeee; */
   display: inline-block;
   vertical-align: top;
   margin: 30px;
