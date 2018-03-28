@@ -63,6 +63,16 @@ p {
   line-height: 1.75em;
 }
 
+/* Minimum Sizing - Responsive */
+img, embed, object, video {
+  max-width: 100%;
+}
+
+nav a, button {
+  min-width: 48px;
+  min-height: 48px;
+}
+
 /* General */
 body {
   margin: 10px;
@@ -112,7 +122,7 @@ a {
 
 /* Intro */
 #intro h3 {
-  width: 50%;
+  width: 90%;
   margin: 0 auto 50px auto;
 }
 
@@ -126,7 +136,6 @@ a {
   width: 20%;
   min-height: 180px;
   padding: 30px;
-  /* background-color: #eeeeee; */
   display: inline-block;
   vertical-align: top;
   margin: 30px;
@@ -209,10 +218,15 @@ footer {
   justify-content: center;
 }
 
-/* On devices wider than 660px */
-@media(min-width: 660px) {
+@media(min-width: 600px) {
+  #intro h3 {
+    width: 80%;
+  }
 }
 
 /* On devices wider than 940px */
-@media(min-width: 940px) {
+@media(min-width: 1000px) {
+  #intro h3 {
+    width: 50%;
+  }
 }
