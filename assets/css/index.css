@@ -79,29 +79,25 @@ body {
 }
 
 /* Navigation */
-nav {
-  height: 80px;
-}
-
 nav h1 {
   font-size: 1.5em;
-  display: inline-block;
+  /* display: inline-block; */
+  display: block;
+  text-align: center;
   vertical-align: middle;
   margin: 25px;
 }
 
 nav ul {
-  display: inline-block;
-  float: right;
-  margin-right: 25px;
+  display: none;
 }
 
-nav li {
+/* nav li {
   display: inline-block;
   margin: 30px 15px;
   text-transform: uppercase;
   vertical-align: middle;
-}
+} */
 
 a {
   text-decoration: none;
@@ -109,7 +105,7 @@ a {
 
 /* Splash Image */
 .splash img {
-  width: 100%;
+  /* width: 100%; */
 }
 
 /* Main Content */
@@ -130,15 +126,18 @@ a {
 #about {
   text-align: center;
   vertical-align: center;
+  /* display: flex;
+  flex-wrap: wrap; */
 }
 
 .bio {
-  width: 20%;
+  width: 70%;
   min-height: 180px;
   padding: 30px;
   display: inline-block;
   vertical-align: top;
-  margin: 30px;
+  margin: 30px auto;
+  /* margin: 30px; */
 }
 
 .bio p {
@@ -150,14 +149,21 @@ a {
   text-align: center;
   margin-top: 50px;
   margin-bottom: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 #cats-in-costume img {
   height: 250px;
   width: 250px;
   border-radius: 125px;
-  display: inline-block;
+  display: none;
   margin: 0 27px;
+}
+
+#cats-in-costume img:first-of-type {
+  display: inline-block;
 }
 
 /* Contact Information */
@@ -167,8 +173,7 @@ a {
 }
 
 #contact h1 {
-  padding-bottom: 45px;
-  margin: 0;
+  display: none;
 }
 
 #contact h2 {
@@ -177,7 +182,7 @@ a {
 
 .contact-details {
   background-color: white;
-  width: 20%;
+  width: 42%;
   display: inline-block;
   padding: 30px;
   margin: 0 30px;
@@ -219,14 +224,72 @@ footer {
 }
 
 @media(min-width: 600px) {
+  nav {
+    height: 80px;
+  }
+
+  nav h1 {
+    display: inline-block;
+  }
+
+  nav ul {
+    display: inline-block;
+    float: right;
+    margin-right: 25px;
+  }
+
+  nav li {
+    display: inline-block;
+    margin: 30px 15px;
+    text-transform: uppercase;
+    vertical-align: middle;
+  }
+
+  #cats-in-costume img {
+    height: 200px;
+    width: 200px;
+    margin: 15px;
+    display: inline-flex;
+  }
+
   #intro h3 {
     width: 80%;
+  }
+
+  .bio {
+    width: 28%;
+    margin: 30px;
+  }
+
+  #contact h1 {
+    display: block;
+    padding-bottom: 45px;
+    margin: 0;
+  }
+
+  .contact-details {
+    width: 20%;
   }
 }
 
 /* On devices wider than 940px */
 @media(min-width: 1000px) {
+  #cats-in-costume img {
+    height: 250px;
+    width: 250px;
+    margin: 0 27px;
+  }
+
   #intro h3 {
     width: 50%;
+  }
+
+  .bio {
+    width: 20%;
+    margin: 30px;
+  }
+
+  .contact-details {
+    width: 20%;
   }
 }
