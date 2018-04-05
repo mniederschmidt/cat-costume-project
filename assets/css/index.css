@@ -81,7 +81,6 @@ body {
 /* Navigation */
 nav h1 {
   font-size: 1.5em;
-  /* display: inline-block; */
   display: block;
   text-align: center;
   vertical-align: middle;
@@ -92,20 +91,24 @@ nav ul {
   display: none;
 }
 
-/* nav li {
-  display: inline-block;
-  margin: 30px 15px;
-  text-transform: uppercase;
-  vertical-align: middle;
-} */
-
 a {
   text-decoration: none;
 }
 
+.splash {
+  background-image: url("../images/kats-hero-mobile.jpg");
+  background-position: center;
+  overflow: hidden;
+  width: 100%;
+}
+
 /* Splash Image */
 .splash img {
-  /* width: 100%; */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  max-height: 300px;
 }
 
 /* Main Content */
@@ -113,7 +116,6 @@ a {
   text-align: center;
   margin-top: 80px;
   margin-bottom: 45px;
-  /* margin- */
 }
 
 /* Intro */
@@ -126,8 +128,6 @@ a {
 #about {
   text-align: center;
   vertical-align: center;
-  /* display: flex;
-  flex-wrap: wrap; */
 }
 
 .bio {
@@ -137,7 +137,6 @@ a {
   display: inline-block;
   vertical-align: top;
   margin: 30px auto;
-  /* margin: 30px; */
 }
 
 .bio p {
@@ -224,6 +223,12 @@ footer {
 }
 
 @media(min-width: 600px) {
+  .splash img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   nav {
     height: 80px;
   }
@@ -274,6 +279,10 @@ footer {
 
 /* On devices wider than 940px */
 @media(min-width: 1000px) {
+  .splash img {
+    width: 100%;
+  }
+
   #cats-in-costume img {
     height: 250px;
     width: 250px;
