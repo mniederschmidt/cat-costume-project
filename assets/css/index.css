@@ -102,7 +102,6 @@ a {
   width: 100%;
 }
 
-/* Splash Image */
 .splash img {
   display: block;
   margin-left: auto;
@@ -114,14 +113,14 @@ a {
 /* Main Content */
 #main h1 {
   text-align: center;
-  margin-top: 80px;
-  margin-bottom: 45px;
+  margin-top: 40px;
+  margin-bottom: 10px;
 }
 
 /* Intro */
 #intro h3 {
   width: 90%;
-  margin: 0 auto 50px auto;
+  margin: 0 auto;
 }
 
 /* About - Bios */
@@ -146,8 +145,8 @@ a {
 /* Cats in Costume Images */
 #cats-in-costume {
   text-align: center;
-  margin-top: 50px;
-  margin-bottom: 80px;
+  margin-top: 10px;
+  margin-bottom: 40px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -250,15 +249,26 @@ footer {
     vertical-align: middle;
   }
 
+  #main h1 {
+    margin-top: 50px;
+    margin-bottom: 25px;
+  }
+
+  #intro h3 {
+    margin: 0 auto 10px auto;
+    width: 80%;
+  }
+
+  #cats-in-costume {
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
   #cats-in-costume img {
     height: 200px;
     width: 200px;
     margin: 15px;
     display: inline-flex;
-  }
-
-  #intro h3 {
-    width: 80%;
   }
 
   .bio {
@@ -283,14 +293,27 @@ footer {
     width: 100%;
   }
 
+  #cats-in-costume {
+    margin-top: 50px;
+    margin-bottom: 80px;
+  }
+
   #cats-in-costume img {
     height: 250px;
     width: 250px;
     margin: 0 27px;
   }
 
+  #main h1 {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 45px;
+  }
+
+  /* Intro */
   #intro h3 {
     width: 50%;
+    margin: 0 auto 50px auto;
   }
 
   .bio {
