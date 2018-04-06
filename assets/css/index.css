@@ -151,7 +151,7 @@ a {
   margin-bottom: 40px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 #cats-in-costume img {
@@ -159,7 +159,7 @@ a {
   width: 250px;
   border-radius: 125px;
   display: none;
-  margin: 0 27px;
+  margin: 0 27.5px;
 }
 
 #cats-in-costume img:first-of-type {
@@ -188,6 +188,7 @@ a {
 
 .contact-details {
   background-color: white;
+  min-width: 191px;
   width: 42%;
   display: inline-block;
   padding: 30px;
@@ -310,7 +311,7 @@ footer {
   #cats-in-costume img {
     height: 250px;
     width: 250px;
-    margin: 0 27px;
+    margin: 0 27.5px;
   }
 
   #main-title {
