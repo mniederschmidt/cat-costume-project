@@ -20,7 +20,7 @@ h2 {
   color: #f26522;
 }
 
-#contact, .bio {
+.contact-details, .bio {
   background-color: #eee;
 }
 
@@ -130,14 +130,17 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 30px 0;
 }
 
 .bio {
-  width: 70%;
-  min-height: 180px;
+  width: 100%;
   padding: 30px;
   vertical-align: top;
-  margin: 30px auto;
+}
+
+.bio:first-of-type {
+  padding: 30px 30px 0 30px;
 }
 
 .bio p {
@@ -148,7 +151,7 @@ a {
 #cats-in-costume {
   text-align: center;
   margin-top: 10px;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -169,7 +172,7 @@ a {
 /* Contact Information */
 #contact {
   text-align: center;
-  padding: 80px 0;
+  padding: 30px 0;
 }
 
 #contact h1 {
@@ -187,13 +190,16 @@ a {
 }
 
 .contact-details {
-  background-color: white;
   min-width: 191px;
-  width: 42%;
+  width: 100%;
   display: inline-block;
   padding: 30px;
   margin: 0 30px;
   vertical-align: top;
+}
+
+.contact-details:first-of-type {
+  padding: 30px 30px 0 30px;
 }
 
 .contact-line-head {
@@ -269,8 +275,8 @@ footer {
   }
 
   #cats-in-costume {
-    margin-top: 10px;
-    margin-bottom: 30px;
+    margin-top: 0;
+    margin-bottom: 60px;
   }
 
   #cats-in-costume img {
@@ -285,15 +291,28 @@ footer {
     margin: 30px;
   }
 
+  .bio:first-of-type {
+    padding: 30px;
+  }
+
+  #contact {
+    background-color: #eee;
+    padding: 80px 0;
+  }
+
   #contact h1 {
     display: block;
     padding-bottom: 45px;
     margin: 0;
-
   }
 
   .contact-details {
-    width: 20%;
+    background-color: white;
+    width: 28%;
+  }
+
+  .contact-details:first-of-type {
+    padding: 30px;
   }
 }
 
@@ -301,6 +320,7 @@ footer {
 @media(min-width: 1000px) {
   .splash img {
     width: 100%;
+    max-height: none;
   }
 
   #cats-in-costume {
