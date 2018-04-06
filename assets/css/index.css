@@ -111,7 +111,7 @@ a {
 }
 
 /* Main Content */
-#main h1 {
+#main-title {
   text-align: center;
   margin-top: 40px;
   margin-bottom: 10px;
@@ -127,13 +127,15 @@ a {
 #about {
   text-align: center;
   vertical-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .bio {
   width: 70%;
   min-height: 180px;
   padding: 30px;
-  display: inline-block;
   vertical-align: top;
   margin: 30px auto;
 }
@@ -176,6 +178,12 @@ a {
 
 #contact h2 {
   font-weight: bold;
+}
+
+#contact-details-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .contact-details {
@@ -249,7 +257,7 @@ footer {
     vertical-align: middle;
   }
 
-  #main h1 {
+  #main-title {
     margin-top: 50px;
     margin-bottom: 25px;
   }
@@ -280,6 +288,7 @@ footer {
     display: block;
     padding-bottom: 45px;
     margin: 0;
+
   }
 
   .contact-details {
@@ -287,7 +296,7 @@ footer {
   }
 }
 
-/* On devices wider than 940px */
+/* On devices wider than 1000px */
 @media(min-width: 1000px) {
   .splash img {
     width: 100%;
@@ -304,8 +313,7 @@ footer {
     margin: 0 27px;
   }
 
-  #main h1 {
-    text-align: center;
+  #main-title {
     margin-top: 80px;
     margin-bottom: 45px;
   }
